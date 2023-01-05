@@ -1,0 +1,173 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FishPro</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{%static 'parallax.min.js' %}"></script>
+    <script src="{%static 'parallax.js' %}"></script>
+    <script src="{%static 'bower.json' %}"></script>
+</head>
+<body>
+
+  <div class="header">
+    <ul style="list-style-type:none; display: flex; align-items: center;margin-top: 5px;">
+      <li style="margin-left:10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9216/9216432.png" style="width: 30px;" alt="">
+        <span>FishPro</span>
+      <li style="font-size:13px; margin-left:50px;">
+          <img src="{%static 'telephone.svg' %}" style="padding-right: 5px; margin-left: 15px;" alt=""><i>081615018136</i>
+      </li>
+      <li style="font-size: 13px;">
+          <img src="{%static 'email.svg' %}" style="padding-right: 2px; padding-left: 30px;" alt=""><i>uswahongeh@gmail.com</i>
+      </li>
+      <li style="padding-left: 600px; font-size: 13px;">Uswah Nurkhalifah</li> <a href="https://www.instagram.com/uswahnrr/?hl=id"><img src= "{%static 'instagram (1).svg' %}" style="margin-left:10px;" alt=""><a href="https://twitter.com/whalien52jpg"><img src="{%static 'twitter.svg' %}" style="margin-left:5px;"></a>
+      <li style="font-size:13px; padding-left: 20px; font-size: 13px">
+          <a href="http://127.0.0.1:8000/login" style="color: white; background-color: rgba(16, 1, 36, 0.747); padding: 2px 15px; border-radius: 10px; padding-bottom: 10px; text-align: center;" >Login</a>
+      </li>
+      
+    </ul>
+    </hr>
+  </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(51, 32, 224, 0.452)">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/landing/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="http://127.0.0.1:8000/halamandua/">Data Produksi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#rekomendasi">Tentang Indonesia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pelabuhan</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="parallax-window" data-parallax="scroll" data-image-src="https://cdn.pixabay.com/photo/2019/08/08/11/33/stingray-4392776_960_720.jpg" style="width: 100%; height: 80vh;">
+        <br>
+          <h1 style="color:white; text-align: center;"></h1>
+          <br>
+          <h2 style="color:white; text-align: center;"></h2>
+          <br>
+          <h1 style="color:white; text-align: center;"> </h1>
+          <p style="color:white; text-align: center;"></p>
+          <br>
+          <p style="color:wheat; text-align: center; font-size: 20px;">AYO! CARITAHU TENTANG PERIKANAN INDONESIA</p>
+      </div>
+  
+
+      <section id="rekomendasi" style="background-image: linear-gradient(rgb(75, 59, 165), rgb(1, 1, 46))">
+        <div class="container">
+          <div class="row mb-4">
+            <div class="col-12 text-center">
+              <br>
+              <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <img src="https://cdn.pixabay.com/photo/2018/05/15/18/06/fishing-3403833_960_720.png" style="width: 70%; height:50vh; margin-right: 300px;">
+                  </div>
+                  <br>
+                  <div class="col" style="color:wheat; text-align: center; margin-top: 50px;">
+                    <p>Produksi ikan adalah seluruh hasil yang diperoleh dari kegiatan penangkapan atau budidaya ikan/binatang air lainnya/tanaman air yang ditangkap atau dipanen dari sumber perikanan alami atau dari tempat pemeliharaan, baik yang diusahakan oleh perusahaan perikanan maupun rumah tangga perikanan.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        
+
+      <footer class="bg-dark text-white pt-5 pb-4">
+
+        <div class="container text-center text-md-left">
+
+          <div class="row text-center text-md-left">
+
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto-mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">FishPro</h5>
+              <p>FishPro merupakan salah satu aplikasi berbasis website yang bertujuan untuk mengupdate data-data produksi perikanan di Indonesia</p>
+
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto-mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning">prodak</h5>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">mengenal Indonesia</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Keindahaan Alam</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">Seafood</a>
+            </p>
+            <p>
+              <a href="#" class="text-white" style="text-decoration: none;">boostrap 5 alpha</a>
+            </p>
+            </div>
+            
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto-mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">useful link</h5>
+              <p>
+                <a href="#" class="text-white" style="text-decoration: none;">Your account</a>
+              </p>
+              <p>
+                <a href="#" class="text-white" style="text-decoration: none;">become a affiliates</a>
+              </p>
+              <p>
+                <a href="#" class="text-white" style="text-decoration: none;">shipping rate</a>
+              </p>
+              <p>
+                <a href="#" class="text-white" style="text-decoration: none;">help</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto-mt-3">
+              <h5 class="text-uppercase mb-4 font-weight-bold text-warning">contact</h5>
+              <p>
+                <i class="fas fa-home mr-3"></i>Banten, Indonesia
+              </p>
+              <p>
+                <i class="fas fa-envelope mr-3"></i>uswahongeh@gmail.com
+              </p>
+              <p>
+                <i class="fas fa-phone mr-3"></i>+62 81615018136
+              </p>
+            </div>
+
+      </footer>
+    </section>
+
+    
+
+
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+</body>
+</html>

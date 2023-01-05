@@ -1,0 +1,79 @@
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="{%static 'parallax.min.js' %}"></script>
+    <script src="{%static 'parallax.js' %}"></script>
+    <script src="{%static 'bower.json' %}"></script>
+</head>
+<body>
+
+  <div class="header">
+    <ul style="list-style-type:none; display: flex; align-items: center;margin-top: 5px;">
+      <li style="margin-left:10px;">
+        <img src="https://cdn-icons-png.flaticon.com/512/9216/9216432.png" style="width: 30px;" alt="">
+        <span>FishPro</span>
+      <li style="font-size:13px; margin-left:50px;">
+          <img src="{%static 'telephone.svg' %}" style="padding-right: 5px; margin-left: 15px;" alt=""><i>081615018136</i>
+      </li>
+      <li style="font-size: 13px;">
+          <img src="{%static 'email.svg' %}" style="padding-right: 2px; padding-left: 30px;" alt=""><i>uswahongeh@gmail.com</i>
+      </li>
+      <li style="padding-left: 600px; font-size: 13px;">Uswah Nurkhalifah</li> <a href="https://www.instagram.com/uswahnrr/?hl=id"><img src= "{%static 'instagram (1).svg' %}" style="margin-left:10px;" alt=""><a href="https://twitter.com/whalien52jpg"><img src="{%static 'twitter.svg' %}" style="margin-left:5px;"></a>
+      <li style="font-size:13px; padding-left: 20px; font-size: 13px">
+          <a href="http://127.0.0.1:8000/login" style="color: white; background-color: rgba(16, 1, 36, 0.747); padding: 2px 15px; border-radius: 10px; padding-bottom: 10px; text-align: center;" >Login</a>
+      </li>
+      
+    </ul>
+    </hr>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:rgba(51, 32, 224, 0.452)">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/landing/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="http://127.0.0.1:8000/halamandua/">Data Produksi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#rekomendasi">Tentang Indonesia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Pelabuhan</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+      {% endblock %}
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+    
+</body>
+</html>
+  

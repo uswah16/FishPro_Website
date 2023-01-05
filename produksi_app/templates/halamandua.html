@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    <br>
+    <table class="table table-bordered" style="text-align: center;">
+        <thead>    
+          <tr>
+            <th scope="col">Provinsi</th>
+            <th scope="col">Jenis Ikan</th>
+            <th scope="col">Foto</th>
+            <th scope="col">Jenis Usaha</th>
+            <th scope="col">Tahun</th>
+            <th scope="col">Nilai Produksi</th>
+            <th scope="col">Volume Produksi</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% for ikan in ikan %}
+          <tr>
+            <td>{{ ikan.Provinsi }}</td>
+            <td>{{ ikan.Jenis_Ikan }}</td>
+            <td><img src="{% static ikan.img%}" width="150px" alt="" /></td>
+            <td>{{ ikan.Jenis_Usaha }}</td>
+            <td>{{ ikan.Tahun }}</td>
+            <td>{{ ikan.Nilai_Produksi }}</td>
+            <td>{{ ikan.Volume_Produksi }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+
+
+{% endblock %}

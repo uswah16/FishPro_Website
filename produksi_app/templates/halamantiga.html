@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container text-justify">
+    <div class="row">
+      <div class="col">
+        <img src="{%static 'hiu.jpg' %}" width="100%" alt="">
+      </div>
+      <div class="col">
+        <pre>
+            Produksi Ikan <hr>
+            Jenis Usaha     : Tangkap Laut
+            Tempat          : Bali
+            Jenis           : Hiu
+            Tahun           : 2020
+            Nilai Produksi  : 50.950.237
+            Volume Produksi : 1.293,79
+        </pre>
+            <p> Perikanan tangkap laut merupakan usaha menangkap ikan di laut Usaha itu dilakukan diperairan pantai atau di tengah laut.</p>
+            <p> Dataset ini berisi data Jumlah Produksi dan Nilai Perikanan Tangkap Laut di Bali khususnya pada Hiu pada periode tahun 2020.</p>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
